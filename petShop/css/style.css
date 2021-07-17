@@ -1,0 +1,32 @@
+
+.contacto {
+    background-color: #3C2313;
+    color:  #FFFFFF
+}
+
+.barritaArriba {
+  background-color: #222222;
+  color: #F3F3F3
+}
+
+.barritaAbajo {
+    background-color: #F0A83E;
+    color: #F3F3F3
+}
+
+.detalle {
+  color: #8A8787;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.parteAbajo {
+  background-color: #F0A83E;
+  color: white;
+}
+
+.nombreProducto {
+  color: #3C2313;
+}
