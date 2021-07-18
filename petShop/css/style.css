@@ -1,3 +1,8 @@
+.fondoPatita { 
+  background-image: url('../img/bowl_background.png')
+ 
+}
+
 
 .contacto {
     background-color: #3C2313;
@@ -29,4 +34,8 @@ body {
 
 .nombreProducto {
   color: #3C2313;
+}
+
+.precioProducto {
+  color: #F0A83E;
 }
