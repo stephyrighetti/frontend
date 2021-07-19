@@ -1,14 +1,13 @@
-.fondoPatita { 
-  background-image: url('../img/bowl_background.png')
- 
+.banner { 
+  background-image: url('../img/bowl_background.png');
+  background-size: cover;
+  height: 600px;
 }
 
-
-.contacto {
-    background-color: #3C2313;
-    color:  #FFFFFF
+.banner button {
+  color:#FFFFFF;
+  background-color: #F0A83E;
 }
-
 .barritaArriba {
   background-color: #222222;
   color: #F3F3F3
@@ -19,12 +18,21 @@
     color: #F3F3F3
 }
 
+
+
+.contacto {
+    background-color: #3C2313;
+    color:  #FFFFFF
+}
+
+
 .detalle {
   color: #8A8787;
 }
 
-body {
-  font-family: Roboto;
+
+.listaProductos {
+  color: #666666;
 }
 
 .parteAbajo {
@@ -32,10 +40,11 @@ body {
   color: white;
 }
 
-.nombreProducto {
-  color: #3C2313;
-}
 
 .precioProducto {
   color: #F0A83E;
+}
+
+.nombreProducto {
+  color: #3C2313;
 }

@@ -1,0 +1,28 @@
+
+header{
+text-align: center;
+letter-spacing: 20px;
+background-image: url(../img/japon2.png);
+background-size: cover;
+background-attachment: fixed;
+}
+
+h1 { 
+    color: blue;
+    background-color: plum;
+
+}
+
+.menu {
+    color: blue;
+}
+
+.subtitulo {
+    color: blue; 
+    background-color: plum;
+}
+
+.lista span {
+    font-style: italic;
+    font-weight: bold;
+}
