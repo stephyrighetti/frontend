@@ -2,27 +2,29 @@
 article {
     display: inline-block;
     background-color: #F3F3F3;
-    margin-top: 8cm;
-    margin-left: 6cm;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    width: 25vw;
-    height: 40cm;
+    margin-top: 4cm;
+    margin-left: 2cm;
+    width: 20vw;
+    height: 45vw;
 }
 
 
-
-div {
+#barra {
     background-color: #1CD1B0;
     color:black;
-}
+    padding: 10px;
+    font-family: 'Roboto';
 
+}
 
 
 header {
     background-color: #00669F;
     color: #000000;
-    font-family: roboto;
+    font-family: 'roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
    
 }
 
@@ -36,4 +38,10 @@ footer {
     background-color: #00669F;
     color: #FFF9F9;
 
+}
+
+.texto {
+    font-family: 'Roboto';
+    color: #333333;
+    font-size: 16px;
 }
