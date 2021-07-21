@@ -1,47 +1,88 @@
-
-article {
-    display: inline-block;
-    background-color: #F3F3F3;
-    margin-top: 4cm;
-    margin-left: 2cm;
-    width: 20vw;
-    height: 45vw;
+body {
+    margin: 0;
+    font-family: 'Roboto';
 }
-
 
 #barra {
     background-color: #1CD1B0;
     color:black;
     padding: 10px;
-    font-family: 'Roboto';
-
+    font-size: 15px;
 }
-
 
 header {
     background-color: #00669F;
-    color: #000000;
-    font-family: 'roboto';
-    font-size: 15px;
-    font-style: normal;
-    font-weight: normal;
-   
+    padding: 28px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
 }
 
-.imagenCircular {
-    border-radius: 50%;
-    position: relative;
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+}
 
+#parte1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3cm;
+}
+
+article {
+    flex: 1;
+    background-color: #F3F3F3;
+    max-width: 20vw;
+    margin-right: 30px;
+}
+
+article:last-child {
+    margin-right: 0;
+}
+
+article .imagenFondo {
+    width: 100%;
+}
+
+article .imagenCircular {
+    border-radius: 50%;
+    height: 118px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -59px;
+}
+
+.descripcionPersonaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.descripcionPersonaje button {
+    background: #00669F;
+    color: white;
+    padding: 16px 32px;
+    font-size: 15px;
+    border: 0;
+    margin-top: 10px;
+}
+
+.nombrePersonaje {
+    font-size: 30px;
 }
 
 footer {
     background-color: #00669F;
     color: #FFF9F9;
-
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    bottom: 0px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .texto {
-    font-family: 'Roboto';
     color: #333333;
     font-size: 16px;
 }
