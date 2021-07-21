@@ -14,6 +14,7 @@ header {
     background-color: #00669F;
     padding: 28px;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    position: sticky;
 }
 
 header h1 {
@@ -33,6 +34,9 @@ article {
     background-color: #F3F3F3;
     max-width: 20vw;
     margin-right: 30px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    margin-bottom: 40px;
+    
 }
 
 article:last-child {
@@ -49,7 +53,17 @@ article .imagenCircular {
     display: block;
     margin: 0 auto;
     margin-top: -59px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%)
 }
+
+.corazon {
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    bottom: 26vw;
+    margin-left: 15px;
+}
+
 
 .descripcionPersonaje {
     display: flex;
@@ -74,12 +88,13 @@ article .imagenCircular {
 footer {
     background-color: #00669F;
     color: #FFF9F9;
-    position: absolute;
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     padding: 16px;
     bottom: 0px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    align-items: flex-end;
 }
 
 .texto {
