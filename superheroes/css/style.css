@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Roboto';
-}
+    box-sizing: border-box; }
 
 #barra {
     background-color: #1CD1B0;
@@ -10,11 +10,14 @@ body {
     font-size: 15px;
 }
 
+
 header {
     background-color: #00669F;
     padding: 28px;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
     position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
 header h1 {
@@ -23,10 +26,13 @@ header h1 {
     font-weight: 400;
 }
 
-#parte1 {
+#contenedor {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 3cm;
+    align-items: center;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
 }
 
 article {
@@ -57,11 +63,11 @@ article .imagenCircular {
 }
 
 .corazon {
-    display: flex;
     position: absolute;
-    align-items: flex-start;
-    bottom: 26vw;
-    margin-left: 15px;
+    margin-bottom: 26vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    
 }
 
 
