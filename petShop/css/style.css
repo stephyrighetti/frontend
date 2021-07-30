@@ -20,10 +20,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  font-size: 13px;
 }
 
 .barritaArriba p {
   left: 150cm;
+
 }
 
 .barritaAbajo {
@@ -42,6 +44,11 @@ body {
 .contacto {
     background-color: #3C2313;
     color:  #FFFFFF
+}
+
+
+.listaProductos {
+  align-items: center;
 }
 
 
@@ -67,3 +74,8 @@ body {
 .nombreProducto {
   color: #3C2313;
 }
+
+.ofertas {
+  margin-right: 800px;
+}
+
