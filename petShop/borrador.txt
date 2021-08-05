@@ -1,0 +1,8 @@
+</section>
+                <h3>Contáctanos</h3>
+                <input type= "text">Nombre y apellido</input>
+                <input type= "email">Ingresa tu correo electrónico</input>
+                <input type= "tel">Teléfono</input>
+                <button>Resetar</button>
+                <button>Enviar</button>
+                </section>

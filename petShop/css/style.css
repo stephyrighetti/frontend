@@ -2,42 +2,70 @@
 
 body {
   font-family: 'Roboto';
+  font-weight: 250px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .banner { 
   background-image: url('../img/bowl_background.png');
   background-size: cover;
-  height: 600px;
+  height: 500px;
+  color:#3C2313;
 }
 
-.banner button {
-  color:#FFFFFF;
-  background-color: #F0A83E;
+main section .comedero {
+    background-color: #F0A83E;
+    border-radius: 5px;
+    padding: 0px;
+    margin-left: 1050px;
+    width: 175px;
+
 }
+
 .barritaArriba {
   background-color: #222222;
   color: #F3F3F3;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  font-size: 13px;
+  align-items: center;
+  padding: 0px 100px;
+  height: 25px;
+  font-size: 15px;
+}
+
+.barritaAbajo div {
+  align-self: center;
+  margin-left: 40px;
+}
+
+.barritaArriba ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  
 }
 
 .barritaArriba p {
-  left: 150cm;
-
+  margin-right: 720px;
 }
 
 .barritaAbajo {
     background-color: #F0A83E;
     color: #F3F3F3;
     font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .barritaAbajo ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    gap: 25px;
     
 }
 
@@ -48,9 +76,25 @@ body {
 
 
 .listaProductos {
+  display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
+
+.paw {
+  display: block;
+}
+
+.productosDestacados {
+  text-align: center;
+  color: #3C2313;
+  font-size: 35px;
+  margin: 0px;
+}
 
 .detalle {
   color: #8A8787;
@@ -61,11 +105,20 @@ body {
   color: #666666;
 }
 
+
+.material-icons {
+  display: flex;
+}
+
 .parteAbajo {
   background-color: #F0A83E;
   color: white;
 }
 
+
+.paw {
+  margin-left: 640px;
+}
 
 .precioProducto {
   color: #F0A83E;
@@ -79,3 +132,69 @@ body {
   margin-right: 800px;
 }
 
+
+main section.banner {
+  text-align: center;
+  line-height: 50px;
+  background-image: url("../img/petShop.jpg")
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+main section .subtituloBanner {
+  margin-left: 925px;
+  }
+
+
+main section .imagenesProducto {
+  display: flex;
+  justify-content: space-around;
+}
+
+main section .tituloBanner {
+  background-color: white;
+  width: 400px;
+  border-radius: 7px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-left: 925px;
+  margin-bottom: 0px;
+}
+
+.contenedorContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+footer {
+  background-color: #3C2313;
+}
+
+footer h2 {
+  color: white;
+}
+
+
+footer .detalle2 {
+  color: #8A8787;
+}
+
+
+footer div.contenedorContacto {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .parteAbajo {
+  background-color:#222222;
+}
+
+footer .front {
+  text-align: center;
+}

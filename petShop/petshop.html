@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Petshop</title>
 </head>
 <body>
     
     <header>
         <nav>
             <section class = "barritaArriba">
-                <p class= "ofertas">Grandes ofertas en comederos</p>
+                <p>Grandes ofertas en comederos</p>
                 <ul type = "none">
                 <li>Español</li>
-                <img src= "img/down.png" alt= "flechita nav">
+                <i class="material-icons">keyboard_arrow_down</i>
                 </ul>
                 <ul type = "none">
                     <li>ARG$</li> 
-                <img src= "img/down.png" alt= "flechita nav">
+                    <i class="material-icons">keyboard_arrow_down</i>
                 </ul>
             </nav>
             </section>
             <nav>
             <section class = "barritaAbajo">
-            <img src="./img/Logo.png" alt="Logo PetShop">
+            <div> <img src="./img/Logo.png" alt="Logo PetShop"> </div>
                 <ul type = "none">
                 <li><i class="fas fa-paw"></i>Categorias</li>
                 <li><i class="fas fa-paw"></i>Pets</li>
@@ -39,21 +40,18 @@
     </header>
     <main>
         <section class= "banner">
-            <img src="./img/pawprint.png" alt="Imagen de fondo">
             <div>
-            <h1>¡Es un placer tenerte aquí!</h1>
-            <h4>¡Comederos en descuento!</h4>
+            <p class= "tituloBanner">¡Es un placer tenerte aquí!</p>
+            <p class = "subtituloBanner">¡Comederos en descuento!</p>
             </div>
-            <div class= "comedero">COMEDEROS</div>
+            <span class= "comedero">COMEDEROS</span>
         </section>
 
-        <section class = "contenedor"> 
-            <h2>Productos Destacados</h2>
-            <a class= "listaProductos">Comederos</a>
-            <span>-</span>
-            <a class= "listaProductos">Accesorios</a>
-            <span>-</span>
-            <a class= "listaProductos">Comida</a>
+        <section class= "productos"> 
+            <div class= "paw" > <img src= "img/pawprint.png" alt= "patita"> </div>
+            <h2 class= "productosDestacados">Productos Destacados</h2>
+            <p class= "listaProductos"> Comederos - Accesorios - Comida</p>
+            <div class= "imagenesProducto">
                 <article class= "juguetes">
                     <img src="./img/churrasquito.png" alt="churrasquito">
                     <h4 class = "nombreProducto">Juguete churrasquito <span class="precioProducto">$150</span></h4>
@@ -67,34 +65,39 @@
                     <h4 class = "nombreProducto">Juguete huesito <span class="precioProducto">$650</span></h4>
                     <p></p>  
                 </article>
-            </section>
-                <h3>Contáctanos</h3>
-                <p>Nombre y apellido</p>
-                <p>Ingresa tu correo electrónico</p>
-                <p>Teléfono</p>
-                <button>Resetar</button>
-                <button>Enviar</button>
-                </section>
-
-
+            </div>
         </section>
     </main>
     <footer>
-        <section class = "contacto">
+        <div class= "contenedorContacto">
+        <section class= "contacto">
+            <article>
             <img src= "./img/Icono.png" alt = "iconoLocalidad">
+            <div class = "detalle">
             <h2> Localidad </h2>
-            <h4 class = "detalle">Calle - provincia</h4>
+            <h5 class= "detalle2">Calle - provincia</h5>
+        </div>
+        </article>
+        <article>
             <img src= "./img/Icono (1).png" alt="iconoTelefono">
+            <div class= "detalle">
             <h2>Teléfono</h2>
-            <h4 class = "detalle">Número de teléfono</h4>
+            <h5 class = "detalle2">Número de teléfono</h5>
+        </div>
+        </article>
+        <article>
             <img src= "./img/Icono (2).png" alt="iconoCorreo">
             <h2>Correo electrónico</h2>
-            <h4 class = "detalle">Dirección de correo</h4>
-            <img src="./img/Logo2.png" alt="Logo PetShop">
-            </section>
+            <h5 class = "detalle2">Dirección de correo</h5>
+        </article>
+    </section>
+    <aside> 
+        <img src="./img/Logo2.png" alt="Logo PetShop"> 
+    </aside>
+    </div>
         <hr>
     <section class = "parteAbajo">
-        <p align= "center"> Todos los derechos reservados Front End </p>
+        <p class="front"> Todos los derechos reservados Front End </p>
     </section>
     </footer>
 
