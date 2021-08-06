@@ -7,12 +7,21 @@ body {
   box-sizing: border-box;
 }
 
-.banner { 
+
+main section.banner {
+  text-align: center;
+  line-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
   background-image: url('../img/bowl_background.png');
   background-size: cover;
   height: 500px;
   color:#3C2313;
 }
+
+
 
 main section .comedero {
     background-color: #F0A83E;
@@ -21,6 +30,14 @@ main section .comedero {
     margin-left: 1050px;
     width: 175px;
 
+}
+
+
+header {
+  z-index: 10;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 2px 7px rgb(0 0 0 / 25%);
 }
 
 .barritaArriba {
@@ -133,17 +150,6 @@ main section .comedero {
 }
 
 
-main section.banner {
-  text-align: center;
-  line-height: 50px;
-  background-image: url("../img/petShop.jpg")
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
 main section .subtituloBanner {
   margin-left: 925px;
   }
@@ -176,25 +182,53 @@ footer {
   background-color: #3C2313;
 }
 
-footer h2 {
+footer aside {
+  display: flex;
+  height: 23px;
+  width: 166px;
+  align-self: center;
+}
+
+footer h3 {
   color: white;
 }
 
 
 footer .detalle2 {
   color: #8A8787;
+  margin: 0px;
 }
 
 
 footer div.contenedorContacto {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: relative;
 }
+
 
 footer .parteAbajo {
   background-color:#222222;
-}
-
-footer .front {
+  margin: 0px;
+  display: block;
+  width: 1342px;
+  height: 20px;
   text-align: center;
 }
+
+
+footer article {
+  display:flex;
+  gap: 20px;
+  
+
+}
+
+footer article img {
+  height: 65px;
+  width: 65px;
+  bottom: 70px;
+}
+

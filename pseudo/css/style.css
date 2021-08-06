@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 10px;
+}
+
+header aside {
+    background-color:#1CD1B0;
+    width: 1380px;
+    height: 20px;
+    display: inline-block;
+    padding: 3px;
+}
+
+header section {
+    background-color: #00669F;
+    width: 1380px;
+    height: 85px;
+}
+
+header .titulo {
+    display: inline-block;
+    bottom: 50px;
+}
+
+header nav {
+    background-color: #001D2D;
+    color: white;
+    width: 1380px;
+    height: 40px;
+    justify-content: flex-end;
+    display: flex;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0px;
+    margin-right: 100px;
+    align-items: center;
+}
+
+
+footer {
+    background-color: #00669F;
+    color: white;
+    margin: 0px;
+    padding: 2px;
+    text-align: center;
+}
