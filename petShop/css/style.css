@@ -1,38 +1,16 @@
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Roboto';
   font-weight: 250px;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  display: block;
 }
 
-
-main section.banner {
-  text-align: center;
-  line-height: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 20px;
-  background-image: url('../img/bowl_background.png');
-  background-size: cover;
-  height: 500px;
-  color:#3C2313;
-}
-
-
-
-main section .comedero {
-    background-color: #F0A83E;
-    border-radius: 5px;
-    padding: 0px;
-    margin-left: 1050px;
-    width: 175px;
-
-}
-
-
+/* ---------- Header ----------*/ 
 header {
   z-index: 10;
   position: sticky;
@@ -40,159 +18,336 @@ header {
   box-shadow: 0px 2px 7px rgb(0 0 0 / 25%);
 }
 
+
 .barritaArriba {
   background-color: #222222;
   color: #F3F3F3;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 0px 100px;
-  height: 25px;
-  font-size: 15px;
-}
-
-.barritaAbajo div {
-  align-self: center;
-  margin-left: 40px;
+  height: 2vw;
+  width: 100%;
+  font-size: 12px;
 }
 
 .barritaArriba ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  
+  align-items: center;
 }
 
-.barritaArriba p {
-  margin-right: 720px;
+.opcionesMoneda {
+  display: flex;
 }
 
 .barritaAbajo {
-    background-color: #F0A83E;
-    color: #F3F3F3;
-    font-style: normal;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+  background-color: #F0A83E;
+  color: #F3F3F3;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.barritaAbajo div {
+align-self: center;
+margin-left: 40px;
 }
 
 .barritaAbajo ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 25px;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 25px;
+  
 }
 
-.contacto {
-    background-color: #3C2313;
-    color:  #FFFFFF
+.barritaAbajo ul li:hover {
+opacity: 0.9;
+transition: all 0.3s;
+color: #3C2313;
+cursor: pointer;
 }
 
 
-.listaProductos {
+/* ---------- Main ---------- */
+
+main {
+  display:block;
+}
+
+main section.banner {
+  text-align: center;
+  line-height: 7.60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color:#3C2313;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  margin: 0;
+}
+
+
+.titulos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-end: 15px;
+  margin: 0;
+}
+
+.titulos p {
+  background-color: white;
+  width: 400px;
+  border-radius: 7px;
+  font-size: 30px;
+  margin: 0;
+}
+
+.titulos h3 {
+  margin: 0;
+}
+
+
+main section .comedero {
+    background-color: #F0A83E;
+    border-radius: 5px;
+    padding: 0px;
+    width: 13vw;
+    cursor: pointer;
+}
+
+main section .comedero:hover {
+  opacity: 0.5;
+    transition: ease 1s;
+}
+
+main section .paw {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+main section .productosDestacados {
+  text-align: center;
+  color: #3C2313;
+  font-size: 35px;
+  margin: 0;
+}
+
+main section .listaProductos {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 30px;
   text-align: center;
-}
-
-
-.paw {
-  display: block;
-}
-
-.productosDestacados {
-  text-align: center;
-  color: #3C2313;
-  font-size: 35px;
-  margin: 0px;
-}
-
-.detalle {
-  color: #8A8787;
-}
-
-
-.listaProductos {
   color: #666666;
 }
-
-
-.material-icons {
-  display: flex;
-}
-
-.parteAbajo {
-  background-color: #F0A83E;
-  color: white;
-}
-
-
-.paw {
-  margin-left: 640px;
-}
-
-.precioProducto {
-  color: #F0A83E;
-}
-
-.nombreProducto {
-  color: #3C2313;
-}
-
-.ofertas {
-  margin-right: 800px;
-}
-
-
-main section .subtituloBanner {
-  margin-left: 925px;
-  }
-
 
 main section .imagenesProducto {
   display: flex;
   justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
-main section .tituloBanner {
-  background-color: white;
-  width: 400px;
-  border-radius: 7px;
-  font-size: 30px;
+main section .nombreProducto {
+  color: #3C2313;
+}
+
+main section .precioProducto {
+  color: #F0A83E;
+}
+
+main section .contacto {
+    background-color: #3C2313;
+    color:  #FFFFFF
+}
+
+
+
+main section .contenedorFormulario {
   display: flex;
   justify-content: center;
-  margin-left: 925px;
-  margin-bottom: 0px;
 }
 
-.contenedorContacto {
+
+.contenedorFormulario2 input {
+  background-color: #3C2313;
+  border: 0;
+  width: 350px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+
+.contenedorFormulario h3 {
+  color: #3C2313;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+ .contenedorContacto {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 50px;
 }
 
-footer {
-  background-color: #3C2313;
+
+main section form.contenedorFormulario2 ::placeholder {
+  color: white;
+  opacity: 0.9;
 }
 
-footer aside {
-  display: flex;
-  height: 23px;
-  width: 166px;
-  align-self: center;
+
+main section .contenedorFormulario2 :focus::placeholder {
+  color: transparent;
+  transition: all 0.5s; 
+
 }
+
+main section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.botones {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+}
+
+
+.contenedorFormulario2 button {
+  color: white;
+  width: 110px;
+  height: 34px;
+  border-radius: 15px;
+  border: 0px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botonResetear {
+  background-color: #8A8787;
+}
+
+.botonResetear:hover {
+  opacity: 0.5;
+  transition: ease 1s;
+}
+
+.botonEnviar {
+  background-color: #F0A83E;
+}
+
+.botonEnviar:hover {
+  opacity: 0.5;
+  transition: ease 1s;
+}
+
+
+/* ---------- Footer ---------- */
+
+
+footer {
+  margin-top: 65px;
+}
+
+
+/* ---------- Form del footer ---------- */ 
+
+
+.novedades {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #F0A83E;
+  color: white;
+  padding: 10px 47px 10px 23px;
+}
+
+.correoIzquierda {
+  display: flex;
+  align-items: center;
+}
+
+.correoIzquierda h3 {
+  font-size: 20px;
+  padding-left: 11px;
+}
+
+
+.correoDerecha {
+  display: flex;
+  flex-direction: flex-start;
+}
+
+
+footer .botonSub {
+  height: 5.2vh;
+  border-radius: 15px;
+  background-color: #3C2313;
+  color: white;
+  padding: 7px;
+  border: 0px;
+  margin-left: 10px;
+}
+
+footer .botonSub:hover {
+    opacity: 0.5;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+footer form.formularioNovedades { 
+  display: flex;
+  justify-content: space-between;
+  background-color: #F0A83E;
+  color: white;
+  padding: 10px;
+  align-items: center;
+
+}
+
+footer form.formularioNovedades input[type= "email"] {
+  width: 280px;
+  height: 40px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  border: white;
+  padding: 15px;
+}
+
+footer form.formularioNovedades input[type="email"]:focus::placeholder{
+  color: transparent;
+  transition: all 0.5s;
+}
+
+/* ----------  Footer datos contacto ----------  */ 
 
 footer h3 {
   color: white;
 }
-
 
 footer .detalle2 {
   color: #8A8787;
@@ -205,30 +360,38 @@ footer div.contenedorContacto {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 50px;
-    position: relative;
-}
+    background-color: #3C2313;
+    margin: 0;
 
-
-footer .parteAbajo {
-  background-color:#222222;
-  margin: 0px;
-  display: block;
-  width: 1342px;
-  height: 20px;
-  text-align: center;
 }
 
 
 footer article {
-  display:flex;
+  display: flex;
   gap: 20px;
+
+}
+
+.contactoLogo {
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+
+.logoFooter {
+  align-self: center;
+}
+
+
+footer .derechos {
+  background-color:#222222;
+  color: white;
+  text-align: center;
   
-
 }
 
-footer article img {
-  height: 65px;
-  width: 65px;
-  bottom: 70px;
+footer .derechos p {
+  padding: 2px;
+  margin: 0;
+  font-size: 13px;
 }
-

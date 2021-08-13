@@ -11,11 +11,13 @@
     <title>Petshop</title>
 </head>
 <body>
-    
     <header>
         <nav>
             <section class= "barritaArriba">
+                <div class= "ofertasP">
                 <p>Grandes ofertas en comederos</p>
+            </div>
+            <div class= "opcionesMoneda"> 
                 <ul type= "none">
                 <li>Español</li>
                 <i class="material-icons">keyboard_arrow_down</i>
@@ -24,6 +26,7 @@
                     <li>ARG$</li> 
                     <i class="material-icons">keyboard_arrow_down</i>
                 </ul>
+            </div>
             </nav>
             </section>
             <nav>
@@ -40,13 +43,13 @@
     </header>
     <main>
         <section class= "banner">
-            <div>
-            <p class= "tituloBanner">¡Es un placer tenerte aquí!</p>
-            <p class= "subtituloBanner">¡Comederos en descuento!</p>
-            </div>
+            <img src= "img/bowl_background.png">
+            <div class= "titulos">
+            <p>¡Es un placer tenerte aquí!</p>
+            <h3>¡Comederos en descuento!</h3>
             <span class= "comedero">COMEDEROS</span>
+        </div>
         </section>
-
         <section class= "productos"> 
             <div class= "paw" > <img src= "img/pawprint.png" alt= "patita"> </div>
             <h2 class= "productosDestacados">Productos Destacados</h2>
@@ -67,37 +70,66 @@
                 </article>
             </div>
         </section>
+        <section class= "contenedorFormulario">
+            <div class= "contenedorFormulario2">
+                <h3>Contáctanos</h3>
+            <form action="#" target="" method="get" name="formDatosPersonales">
+                <label for="nombre y apellido"></label>
+                <input type="text" name="nombre y apellido" placeholder="Nombre y apellido"/>
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="Ingresá tu correo electrónico"/>
+                <label for="telefono"></label>
+                <input type="tel" name="telefono" placeholder="Teléfono"/>
+                <div class= "botones">
+                <button type="reset" class="botonResetear">Resetear</button>
+                <button type= "submit" class="botonEnviar">Enviar</button>
+            </div>
+            </form> 
+            </div>
+        </section>
     </main>
     <footer>
+        <div class= "novedades">
+            <div class= "correoIzquierda">
+        <img src= "./img/enviar-correo 1.png" alt= "correo">
+        <h3>Suscríbete para más novedades</h3>
+    </div>
+    <div class= "correoDerecha"> 
+        <form action="#" target="" method="get" name="suscripcion email"  class= "formularioNovedades">
+            <input type= "email" name= "email" placeholder= "Ingresá tu correo electrónico"> 
+            <button type= "submit" class= "botonSub">Suscribirme</button>
+        </form>
+    </div>
+    </div>
         <div class= "contenedorContacto">
-            <section class= "contacto">
-                <article>
+            <div class= "contacto">
+                <div class= "contactoLogo">
                     <img src= "./img/Icono.png" alt = "iconoLocalidad">
                     <div class = "detalle">
                         <h3> Localidad </h3>
                         <h5 class= "detalle2">Calle - provincia</h5>
                     </div>
-            </article>
-            <article>
+                </div>
+            <div class= "contactoLogo">
                 <img src= "./img/Icono (1).png" alt="iconoTelefono">
                 <div class= "detalle">
                     <h3>Teléfono</h3>
                     <h5 class= "detalle2">Número de teléfono</h5>
                 </div>
-            </article>
-            <article>
+            </div>
+            <div class= "contactoLogo">
                 <img src= "./img/Icono (2).png" alt="iconoCorreo">
                 <div class= "detalle">
                     <h3>Correo electrónico</h3>
                     <h5 class= "detalle2">Dirección de correo</h5>
                 </div>
-            </article>
-    </section>
-    <aside> 
+            </div>
+        </div>
+    <div class= "logoFooter"> 
         <img src="./img/Logo2.png" alt="Logo PetShop"> 
-    </aside>
     </div>
-    <section class= "parteAbajo">
+    </div>
+    <section class= "derechos">
         <p> Todos los derechos reservados Front End </p>
     </section>
     </footer>
